@@ -67,18 +67,6 @@ void Time::addsec(int second)
     m_second = m_totalsec % 60;
     m_minute = (m_totalsec % 3600) / 60;
     m_hour = (m_totalsec / 3600) % 24;
-
-    // m_second += second;
-    // m_minute += m_second / 60;
-    // m_hour += m_minute / 60;
-    // if (m_second >= 60)
-    //     m_second %= 60;
-    // if (m_minute >= 60)
-    //     m_minute %= 60;
-    // if (m_hour >= 24)
-    //     m_hour %= 24, m_totalsec = m_second + m_minute * 60 + m_hour * 3600;
-    // else
-    //     m_totalsec += second;
 }
 
 void Time::addmin(int minute)
@@ -93,15 +81,6 @@ void Time::addmin(int minute)
     m_second = m_totalsec % 60;
     m_minute = (m_totalsec % 3600) / 60;
     m_hour = (m_totalsec / 3600) % 24;
-
-    // m_minute += minute;
-    // m_hour += m_minute / 60;
-    // if (m_minute >= 60)
-    //     m_minute %= 60;
-    // if (m_hour >= 24)
-    //     m_hour %= 24, m_totalsec = m_second + m_minute * 60 + m_hour * 3600;
-    // else
-    //     m_totalsec += minute * 60;
 }
 
 void Time::addhour(int hour)
@@ -116,12 +95,6 @@ void Time::addhour(int hour)
     m_second = m_totalsec % 60;
     m_minute = (m_totalsec % 3600) / 60;
     m_hour = (m_totalsec / 3600) % 24;
-
-    // m_hour += hour;
-    // if (m_hour >= 24)
-    //     m_hour %= 24, m_totalsec = m_second + m_minute * 60 + m_hour * 3600;
-    // else
-    //     m_totalsec += hour * 3600;
 }
 
 void Time::addtime(int hour, int minute, int second)
