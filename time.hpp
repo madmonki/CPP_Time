@@ -3,7 +3,7 @@
 
 class Time {
 public:
-    // constructor
+    // constructors
     constexpr Time() : m_hour(0), m_minute(0), m_second(0), m_totalsec(0)
     {}
     constexpr Time(int hour, int minute, int second) : 
